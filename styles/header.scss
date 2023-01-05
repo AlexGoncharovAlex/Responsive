@@ -24,15 +24,16 @@
 .header__menu-icon{
     width: 18px;
     height: 13px;
-    // background-image: url(img/icon-compas.png);
+   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
     display: inline-block;
-    background-color: red($color: #000000);
+    
 }
 @media screen and (min-width:400px){
     .navigation{
          margin-left: auto;
          margin-top: 7px;
          margin-right: 75px;
+         display: flex;
     }
     .header{
     width: 1140px;
@@ -63,8 +64,9 @@
     height: 60px;
     margin-right: 15px;
     }
-    
 }
+
+
 .navigation__item {
     color: #2B292D99;
     text-decoration: none;
