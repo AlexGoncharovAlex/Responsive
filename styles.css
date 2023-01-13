@@ -38,7 +38,7 @@
 }
 
 .action-button {
-  background-color: #3040C4;
+  background-color: #3040c4;
   color: #fff;
   width: 160px;
   height: 48px;
@@ -129,7 +129,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
-  color: #009B4D;
+  color: #009b4d;
   margin: 0;
 }
 .feature__titel {
@@ -208,7 +208,7 @@
   }
 }
 .footer__line {
-  border-top: 1px solid #2B292D;
+  border-top: 1px solid #2b292d;
   width: 100%;
   opacity: 0.1;
   margin: 0;
@@ -291,7 +291,7 @@
   font-weight: bold;
   font-size: 22px;
   line-height: 28px;
-  color: #2B292D;
+  color: #2b292d;
 }
 .nav-links__list {
   list-style-type: none;
@@ -488,7 +488,7 @@
 .logo__description {
   font-size: 18px;
   line-height: 25px;
-  color: #2B292D;
+  color: #2b292d;
   opacity: 0.5;
 }
 @media screen and (min-width: 1400px) {
@@ -503,11 +503,11 @@
 }
 
 .top-section {
-  background-color: #F3C6BD;
+  background-color: #f3c6bd;
 }
 @media screen and (min-width: 1400px) {
   .top-section {
-    background-color: #F3C6BD;
+    background-color: #f3c6bd;
     padding-top: 39px;
   }
 }
@@ -632,7 +632,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
-  color: #009B4D;
+  color: #009b4d;
 }
 .tip__title {
   margin: 0;
@@ -669,7 +669,7 @@
 
 .order {
   padding: 50px 15px;
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
 }
 @media screen and (min-width: 1400px) {
   .order {
@@ -731,7 +731,7 @@
 .order__button {
   margin-top: 12px;
   height: 48px;
-  background-color: #3142C6;
+  background-color: #3142c6;
 }
 @media screen and (max-width: 1399px) {
   .order__button {
@@ -751,18 +751,19 @@
   color: rgba(43, 41, 45, 0.6);
 }
 .order__terms-link {
-  color: #3142C6;
+  color: #3142c6;
 }
 
 .audience {
-  padding: 50px 15px 0 15px;
+  padding: 50px 15px 50px 15px;
+  background: #00a1c6;
 }
 .audience__subtitle {
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
   text-align: center;
-  color: #2B292D;
+  color: #2b292d;
 }
 .audience__title {
   margin-top: 17px;
@@ -771,7 +772,7 @@
   line-height: 40px;
   text-align: center;
   letter-spacing: -0.357143px;
-  color: #2B292D;
+  color: #2b292d;
 }
 .audience__description {
   margin-top: 18px;
@@ -779,7 +780,7 @@
   font-size: 24px;
   line-height: 34px;
   text-align: center;
-  color: #2B292D;
+  color: #2b292d;
 }
 .audience__action-button {
   margin-top: 30px;
@@ -789,8 +790,8 @@
   font-size: 18px;
   line-height: 13px;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #3040C4;
+  color: #ffffff;
+  background-color: #3040c4;
   border: 0;
   border-radius: 2px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
@@ -804,7 +805,7 @@
   line-height: 13px;
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 0;
   border-radius: 2px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
@@ -816,7 +817,7 @@
   border-radius: 8px;
   margin-top: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .audience__logo-developer {
   padding: 22px 76px;
@@ -827,7 +828,7 @@
   font-size: 22px;
   line-height: 28px;
   text-align: center;
-  color: #2B292D;
+  color: #2b292d;
 }
 .audience___item-enter {
   margin: 0;
@@ -836,10 +837,57 @@
   height: 300px;
   border-radius: 8px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-  background: #3040C4;
+  background: #3040c4;
 }
-.audience___item-enter__logo-enter {
+.audience__logo-enter {
   padding: 22px 74px;
+}
+.audience__caption-enter {
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.audience__item-athletes {
+  margin: 0;
+  margin-top: 15px;
+  width: 290px;
+  height: 300px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.audience__logo-athletes {
+  padding: 22px 65px;
+}
+.audience__caption-athletes {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #2b292d;
+}
+.audience__item-creators {
+  margin: 0;
+  margin-top: 15px;
+  width: 290px;
+  height: 300px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.audience__logo-creators {
+  padding: 22px 100px 22px 71px;
+}
+.audience__caption-creators {
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #2b292d;
 }
 
 * {
@@ -849,7 +897,7 @@
 html {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
-  color: #2B292D;
+  color: #2b292d;
 }
 
 .page {
