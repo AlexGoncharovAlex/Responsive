@@ -1,16 +1,20 @@
 .audience {
     padding: 50px 15px 50px 15px;
-    background: rgb(0 161 198 / 25%);
+    background: rgb(0 161 198 / 7%);
+    @include for-large-up {
+        height: 983px;
+    }
 
     &__subtitle {
         font-weight: 700;
         font-size: 22px;
         line-height: 34px;
-        text-align: center;
         color: #2b292d;
+        display: flex;
+        justify-content: center;
 
         @include for-large-up {
-            padding-top: 108px;
+            padding-top: 58px;
         }
     }
     &__title {
@@ -23,10 +27,8 @@
         color: #2b292d;
 
         @include for-large-up {
+            margin: 0;
             margin-top: 24px;
-            font-size: 56px;
-            line-height: 56px;
-            letter-spacing: -0.5px;
         }
     }
     &__description {
@@ -38,13 +40,26 @@
         color: #2b292d;
 
         @include for-large-up {
+            margin: 0;
             margin-top: 24px;
         }
     }
 
+    .block-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include for-large-up {
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 34px;
+            margin-bottom: 111px;
+        }
+    }
     &__action-button {
         margin-top: 30px;
-        width: 290px;
+        width: 100%;
         height: 48px;
         font-weight: 700;
         font-size: 18px;
@@ -56,11 +71,18 @@
         border-radius: 2px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
             inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+
+        @include for-large-up {
+            margin: 0;
+            width: 160px;
+            margin-right: 10px;
+        }
     }
 
     &__menu-button {
         margin-top: 15px;
-        width: 290px;
+        margin-bottom: 40px;
+        width: 100%;
         height: 48px;
         font-weight: 700;
         font-size: 18px;
@@ -72,14 +94,23 @@
         border-radius: 2px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
             inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+        @include for-large-up {
+            margin: 0;
+            width: 160px;
+            margin-right: 10px;
+        }
     }
-
+    .test {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     &__item-developer {
         margin: 0;
-        width: 290px;
+        max-width: 100%;
         height: 300px;
         border-radius: 8px;
-        margin-top: 40px;
+        // margin-top: 40px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
             inset 0px 1px 0px rgba(255, 255, 255, 0.1);
         background-color: #ffffff;
@@ -89,7 +120,6 @@
     }
 
     &__caption-developer {
-        text-align: center;
         font-weight: 700;
         font-size: 22px;
         line-height: 28px;
@@ -100,7 +130,7 @@
     &___item-enter {
         margin: 0;
         margin-top: 15px;
-        width: 290px;
+        max-width: 100%;
         height: 300px;
         border-radius: 8px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
@@ -123,7 +153,7 @@
     &__item-athletes {
         margin: 0;
         margin-top: 15px;
-        width: 290px;
+        max-width: 100%;
         height: 300px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
             inset 0px 1px 0px rgba(255, 255, 255, 0.1);
@@ -145,7 +175,7 @@
     &__item-creators {
         margin: 0;
         margin-top: 15px;
-        width: 290px;
+        max-width: 100%;
         height: 300px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
             inset 0px 1px 0px rgba(255, 255, 255, 0.1);
@@ -163,5 +193,25 @@
         line-height: 28px;
         text-align: center;
         color: #2b292d;
+    }
+
+    .gallery-items {
+        @include for-large-up {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+    }
+
+    .gallery {
+        @include for-large-up {
+            display: flex;
+            justify-content: center;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }
