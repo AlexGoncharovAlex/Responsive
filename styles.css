@@ -761,7 +761,7 @@
   .inbox {
     height: 790px;
     padding: 0;
-    background: rgba(252, 240, 227, 0.8);
+    background: rgba(252, 240, 227, 0.4);
   }
 }
 @media screen and (min-width: 1400px) {
