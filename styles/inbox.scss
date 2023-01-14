@@ -118,7 +118,7 @@
     &__item-developer {
         margin: 0;
         display: flex;
-        padding: 28px 11px 0 20px;
+        // padding: 28px 11px 0 20px;
     }
     .foto-user {
         width: 40px;
@@ -127,11 +127,11 @@
     }
     &__caption-user {
         margin: 0;
-        // font-weight: 700;
-        // font-size: 16px;
-        // line-height: 22px;
-        // color: #2b292d;
-        padding-top: 2px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2b292d;
+        margin-top: 26px;
         height: 66px;
         width: 199px;
 
@@ -140,6 +140,7 @@
         }
     }
     &__autor-of-text {
+        margin: 0;
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
