@@ -1,0 +1,323 @@
+.hiring {
+    background: $background-white;
+    padding: 50px 15px 50px 15px;
+
+    @include for-large-up {
+        padding: 106px 325px 110px 325px;
+    }
+
+    &__mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__header {
+        margin: 0;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+        color: $text-color-grey;
+
+        @include for-large-up {
+            font-size: 56px;
+            line-height: 56px;
+            // text-align: center;
+            letter-spacing: -0.5px;
+        }
+    }
+    &__description {
+        margin: 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        color: $text-color-grey;
+        width: 290px;
+        margin: 18px 15px 0 15px;
+        text-align: center;
+
+        @include for-large-up {
+            margin: 0;
+            width: 555px;
+            margin-top: 20px;
+        }
+    }
+    &__about {
+        margin: 30px 15px 0 15px;
+        background-color: $button-color-blue;
+        border: 0;
+        width: 290px;
+        height: 48px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
+
+        @include for-large-up {
+            margin: 0;
+            margin-top: 28px;
+            width: 247px;
+        }
+
+        &_text {
+            margin: 0;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 13px;
+            text-align: center;
+            color: $text-color-white;
+        }
+    }
+    .block-one {
+        display: flex;
+        justify-content: center;
+    }
+    &__block-front {
+        width: 240px;
+        height: 140px;
+        margin: 39px 0 0 15px;
+        display: flex;
+        border: 1px solid rgba(43, 41, 45, 0.2);
+        border-radius: 8px 0 0 8px;
+
+        @include for-large-up {
+            margin: 0;
+            width: 750px;
+            height: 81px;
+            border-radius: 8px 8px;
+            background-color: $background-blue;
+            margin-top: 110px;
+            position: relative;
+        }
+    }
+    &__block-text {
+        @include for-large-up {
+            display: flex;
+        }
+    }
+    &__cursor {
+        @include for-large-up {
+            width: 13px;
+            height: 14px;
+            position: absolute;
+            top: 60px;
+            left: 270px;
+        }
+        @include for-large-down {
+            display: none;
+        }
+    }
+
+    &__front-header {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        color: $text-color-grey;
+        margin: 19px 21px 7px 20px;
+
+        @include for-large-up {
+            margin: 0;
+            width: 408px;
+            margin: 26px 20px 26px 25px;
+            color: #ffffff;
+        }
+    }
+    &__front-caption {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $text-color-grey;
+        opacity: 0.6;
+        margin: 0 21px 19px 20px;
+
+        @include for-large-up {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 28px 0 27px 0;
+            width: 232px;
+            color: #ffffff;
+            opacity: 1;
+        }
+    }
+
+    &__front-regtangle {
+        width: 50px;
+        height: 140px;
+        background: $background-regtangle-white;
+        margin: 39px 15px 0 0;
+        border-radius: 0px 8px 8px 0px;
+        @include for-large-up {
+            display: none;
+        }
+    }
+    &__front-v {
+        margin: 64px 21px 64px 22px;
+    }
+    &__front-v-desctop {
+        display: none;
+        @include for-large-up {
+            display: block;
+            margin: 35px 24px 34px 33px;
+        }
+    }
+
+    .block-two {
+        display: flex;
+        justify-content: center;
+    }
+    &__block-community {
+        margin: 0;
+        width: 240px;
+        height: 140px;
+        margin: 15px 0 15px 15px;
+        display: flex;
+        border: 1px solid rgba(43, 41, 45, 0.2);
+        border-radius: 8px 0 0 8px;
+
+        @include for-large-up {
+            margin: 0;
+            width: 750px;
+            height: 81px;
+            border-radius: 8px 8px;
+            margin-top: 20px;
+        }
+    }
+    &__block-text {
+        @include for-large-up {
+            display: flex;
+        }
+    }
+    &__community-header {
+        margin: 0;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        color: $text-color-grey;
+        margin: 19px 20px 18px 20px;
+
+        @include for-large-up {
+            margin: 0;
+            width: 408px;
+            margin: 26px 20px 26px 25px;
+        }
+    }
+    &__community-caption {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $text-color-grey;
+        opacity: 0.6;
+        margin: 18px 20px 19px 20px;
+
+        @include for-large-up {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 28px 0 27px 0;
+            width: 232px;
+        }
+    }
+    &__community-regtangle {
+        margin: 0;
+        width: 50px;
+        height: 140px;
+        background: $background-regtangle-white;
+        margin: 15px 15px 0 0;
+        border-radius: 0px 8px 8px 0px;
+
+        @include for-large-up {
+            display: none;
+        }
+    }
+    &__community-v {
+        margin: 0;
+        margin: 64px 21px 64px 22px;
+    }
+    &__community-v-desctop {
+        display: none;
+        @include for-large-up {
+            display: block;
+            margin: 35px 24px 34px 33px;
+        }
+    }
+
+    .block-three {
+        display: flex;
+        justify-content: center;
+    }
+    &__block-designer {
+        margin: 0;
+        width: 240px;
+        height: 140px;
+        margin: 15px 0 15px 15px;
+        display: flex;
+        border: 1px solid rgba(43, 41, 45, 0.2);
+        border-radius: 8px 0 0 8px;
+
+        @include for-large-up {
+            margin: 0;
+            width: 750px;
+            height: 81px;
+            border-radius: 8px 8px;
+            margin-top: 20px;
+        }
+    }
+    &__block-text {
+        @include for-large-up {
+            display: flex;
+        }
+    }
+    &__designer-header {
+        margin: 0;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        color: $text-color-grey;
+        margin: 19px 20px 17px 20px;
+
+        @include for-large-up {
+            margin: 0;
+            width: 408px;
+            margin: 26px 20px 26px 25px;
+        }
+    }
+    &__designer-caption {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $text-color-grey;
+        opacity: 0.6;
+        margin: 17px 20px 19px 20px;
+
+        @include for-large-up {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 28px 0 27px 0;
+            width: 232px;
+        }
+    }
+    &__designer-regtangle {
+        margin: 0;
+        width: 50px;
+        height: 140px;
+        background: $background-regtangle-white;
+        margin: 15px 15px 0 0;
+        border-radius: 0px 8px 8px 0px;
+
+        @include for-large-up {
+            display: none;
+        }
+    }
+    &__designer-v {
+        margin: 0;
+        margin: 64px 21px 64px 22px;
+    }
+    &__designer-v-desctop {
+        display: none;
+        @include for-large-up {
+            display: block;
+            margin: 35px 24px 34px 33px;
+        }
+    }
+}
