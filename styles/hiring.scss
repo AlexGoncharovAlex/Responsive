@@ -85,9 +85,12 @@
             width: 750px;
             height: 81px;
             border-radius: 8px 8px;
-            background-color: $background-blue;
+            // background-color: $background-blue;
             margin-top: 110px;
             position: relative;
+            &:hover {
+                background-color: $background-blue;
+            }
         }
     }
     &__block-text {
@@ -119,7 +122,10 @@
             margin: 0;
             width: 408px;
             margin: 26px 20px 26px 25px;
-            color: #ffffff;
+            // color: #ffffff;
+            &:hover {
+                color: #ffffff;
+            }
         }
     }
     &__front-caption {
@@ -135,8 +141,11 @@
             line-height: 24px;
             margin: 28px 0 27px 0;
             width: 232px;
-            color: #ffffff;
+            // color: #ffffff;
             opacity: 1;
+            &:hover {
+                color: #ffffff;
+            }
         }
     }
 
