@@ -3,6 +3,7 @@
     padding: 50px 15px 50px 15px;
 
     @include for-large-up {
+        // height: 839px;
         padding: 106px 325px 110px 325px;
     }
 
@@ -68,10 +69,12 @@
             color: $text-color-white;
         }
     }
+
     .block-one {
         display: flex;
         justify-content: center;
     }
+
     &__block-front {
         width: 240px;
         height: 140px;
@@ -85,29 +88,36 @@
             width: 750px;
             height: 81px;
             border-radius: 8px 8px;
-            // background-color: $background-blue;
             margin-top: 110px;
-            position: relative;
             &:hover {
-                background-color: $background-blue;
+                background-color: blue;
+                cursor: pointer;
+            }
+            :hover {
+                .hiring__front-caption,
+                .hiring__front-header {
+                    color: white;
+                    opacity: 1;
+                }
+            }
+            :hover {
+                .hiring__arrow-white {
+                    display: inline-block;
+                    color: white;
+                }
+            }
+            :hover {
+                .hiring__front-v-desctop {
+                    @include for-large-up {
+                        visibility: hidden;
+                    }
+                }
             }
         }
     }
     &__block-text {
         @include for-large-up {
             display: flex;
-        }
-    }
-    &__cursor {
-        @include for-large-up {
-            width: 13px;
-            height: 14px;
-            position: absolute;
-            top: 60px;
-            left: 270px;
-        }
-        @include for-large-down {
-            display: none;
         }
     }
 
@@ -122,10 +132,6 @@
             margin: 0;
             width: 408px;
             margin: 26px 20px 26px 25px;
-            // color: #ffffff;
-            &:hover {
-                color: #ffffff;
-            }
         }
     }
     &__front-caption {
@@ -141,11 +147,6 @@
             line-height: 24px;
             margin: 28px 0 27px 0;
             width: 232px;
-            // color: #ffffff;
-            opacity: 1;
-            &:hover {
-                color: #ffffff;
-            }
         }
     }
 
@@ -169,6 +170,20 @@
             margin: 35px 24px 34px 33px;
         }
     }
+    &__arrow-white {
+        @include for-large-down {
+            display: none;
+        }
+        @include for-large-up {
+            display: none;
+            font-size: large;
+            font-family: monospace;
+            position: relative;
+            right: 32px;
+            top: 13px;
+            color: #ffffff;
+        }
+    }
 
     .block-two {
         display: flex;
@@ -189,6 +204,30 @@
             height: 81px;
             border-radius: 8px 8px;
             margin-top: 20px;
+            &:hover {
+                background-color: blue;
+                cursor: pointer;
+            }
+            :hover {
+                .hiring__community-header,
+                .hiring__community-caption {
+                    color: white;
+                    opacity: 1;
+                }
+            }
+            :hover {
+                .hiring__arrow-white {
+                    display: inline-block;
+                    color: white;
+                }
+            }
+            :hover {
+                .hiring__front-v-desctop {
+                    @include for-large-up {
+                        visibility: hidden;
+                    }
+                }
+            }
         }
     }
     &__block-text {
@@ -249,7 +288,6 @@
             margin: 35px 24px 34px 33px;
         }
     }
-
     .block-three {
         display: flex;
         justify-content: center;
@@ -269,6 +307,30 @@
             height: 81px;
             border-radius: 8px 8px;
             margin-top: 20px;
+            &:hover {
+                background-color: blue;
+                cursor: pointer;
+            }
+            :hover {
+                .hiring__designer-header,
+                .hiring__designer-caption {
+                    color: white;
+                    opacity: 1;
+                }
+            }
+            :hover {
+                .hiring__arrow-white {
+                    display: inline-block;
+                    color: white;
+                }
+            }
+            :hover {
+                .hiring__front-v-desctop {
+                    @include for-large-up {
+                        visibility: hidden;
+                    }
+                }
+            }
         }
     }
     &__block-text {
