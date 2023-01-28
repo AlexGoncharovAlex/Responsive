@@ -1,91 +1,129 @@
 .order {
-    padding: 50px 15px;
-    background-color: #f4f5f7;
+    background: #f4f5f7;
+    padding: 50px 15px 50px 15px;
 
-    @include for-large-up {
-        padding: 73px 0 72px 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+    &__picture {
+        @include for-large-up {
+            margin: 23px 121px 0px 209px;
+        }
     }
 
-    &__deteils {
-        max-width: 555px;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include for-large-up {
+            flex-direction: row;
+            align-items: flex-start;
+        }
     }
 
     &__illustration {
-        max-width: 200px;
-
         @include for-large-up {
-            max-width: 269px;
-            margin-right: 121px;
+            width: 269px;
         }
     }
-
+    &__deteils {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include for-large-up {
+            margin-top: 66px;
+            max-width: 555px;
+        }
+    }
     &__title {
-        font-weight: bold;
+        margin: 0;
+        margin-top: 40px;
+        font-weight: 700;
         font-size: 40px;
         line-height: 40px;
-        letter-spacing: -0.357143;
-    }
+        text-align: center;
+        letter-spacing: -0.25px;
+        color: #2b292d;
 
+        @include for-large-up {
+            margin: 0;
+            text-align: start;
+        }
+    }
     &__text {
-        font-size: 24px;
-        line-height: 34px;
         margin: 0;
         margin-top: 18px;
-    }
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: #2b292d;
 
+        @include for-large-up {
+            margin: 0;
+            margin-top: 12px;
+        }
+    }
     &__form {
         @include for-large-up {
-            display: flex;
+            margin: 0;
             margin-top: 26px;
         }
     }
-
     &__email {
         margin-top: 40px;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 13px;
+        text-align: center;
+        width: 290px;
+        height: 48px;
+        color: #2b292d;
+
         background: #ffffff;
         border: 1px solid rgba(43, 41, 45, 0.2);
         border-radius: 2px;
-        height: 48px;
-        width: 100%;
-        text-align: center;
+        @include for-large-up {
+            margin: 0;
+            padding: 0;
+            width: 385px;
+            padding-right: 224px;
+        }
+    }
+    &__button {
+        font-weight: 700;
         font-size: 18px;
         line-height: 13px;
-
-        @include for-large-up {
-            margin-top: 0;
-        }
-
-        &::placeholder {
-            color: #2b292d;
-        }
-    }
-
-    &__button {
-        margin-top: 12px;
+        text-align: center;
+        color: #ffffff;
+        width: 290px;
         height: 48px;
-        background-color: #3142c6;
 
-        @include for-large-down {
-            width: 100%;
-        }
+        margin-top: 12px;
 
+        background: #3040c4;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
+        border: 0;
         @include for-large-up {
-            margin-top: 0;
-            margin-left: 10px;
-            flex-shrink: 0;
+            margin: 0;
+            padding: 0;
+            width: 160px;
         }
     }
-
     &__terms {
+        margin: 0;
+        margin-top: 10px;
+        font-weight: 400;
         font-size: 14px;
         line-height: 22px;
-        color: rgba(43, 41, 45, 0.6);
-    }
+        text-align: center;
 
-    &__terms-link {
-        color: #3142c6;
+        color: rgba(43, 41, 45, 0.6);
+
+        &__terms-link {
+            color: #3142c6;
+        }
+        @include for-large-up {
+            width: 495px;
+        }
     }
 }
