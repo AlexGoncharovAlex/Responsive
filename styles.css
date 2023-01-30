@@ -695,7 +695,6 @@
 .order__deteils {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 @media screen and (min-width: 1400px) {
   .order__deteils {
@@ -709,7 +708,6 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
-  text-align: center;
   letter-spacing: -0.25px;
   color: #2b292d;
 }
@@ -758,7 +756,6 @@
     margin: 0;
     padding: 0;
     width: 385px;
-    padding-right: 224px;
   }
 }
 .order__button {
