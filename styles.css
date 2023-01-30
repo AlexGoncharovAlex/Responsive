@@ -1199,18 +1199,21 @@
   height: 1px;
   background: #3040c4;
   margin-top: -5px;
+  display: block;
 }
 .comunication .line-blue-flex {
   max-width: 234px;
   height: 1px;
   background: #3040c4;
   margin-top: -5px;
+  display: block;
 }
 .comunication .line-blue-fast {
   max-width: 235px;
   height: 1px;
   background: #3040c4;
   margin-top: -5px;
+  display: block;
 }
 
 .audience {
